@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.com.titus.communityapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_maps_key" />
+
+        <activity android:name=".activitiy.MainActivity" />
+        <activity android:name=".activitiy.authentication.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitiy.authentication.RegisterActivity" />
+        <activity android:name=".activitiy.report.ReportActivity" />
+        <activity
+            android:name=".activitiy.report.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".activitiy.report.ViewReports" />
+        <activity android:name=".activitiy.report.ReportMapViewActivity" />
+        <activity android:name=".activitiy.rent.RentActivity" />
+        <activity android:name=".activitiy.rent.ViewSpaceActivity" />
+        <activity android:name=".activitiy.rent.SchedulesViewActivity" />
+    </application>
+
+</manifest>

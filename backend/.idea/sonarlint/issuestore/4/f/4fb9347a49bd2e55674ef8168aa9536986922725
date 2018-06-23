@@ -1,0 +1,5 @@
+
+Ksquid:S1068"/Remove this unused "description" private field.(ÇÓæâýÿÿÿÿ
+`squid:UselessImportCheck
+"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ8ìüŽœ¸,
+hsquid:UselessImportCheck	"8Remove this unused import 'javax.persistence.ManyToOne'.(ÇÑ²Žøÿÿÿÿ8ìüŽœ¸,
